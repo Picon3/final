@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Hole</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <header class="header">
+            <div class="logo">
+                <a href=""><img src="holeminy.jpeg" alt="logo"></a>
+                <a href="#" class="bh"></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn"><button>Iniciar sesion</button></a>
+        </header>
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-cart">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
+
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Zapatos Nike</p>
+                            <span class="precio-producto-carrito">$80</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="icon-close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cart-total hidden">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$200</span>
+                </div>
+                <p class="cart-empty">El carrito está vacío</p>
+            </div>
+        </div>
+    </header>
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="bh reme aro fuego.jpeg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>BH Aro de Fuego</h2>
+                <p class="price">$40</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="bh reme no this earth.jpeg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>BH No Of This Earth</h2>
+                <p class="price">$35</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="bh reme retorno.jpeg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>BH Infinity</h2>
+                <p class="price">$35</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="bh reme simple.jpeg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>BH Classic</h2>
+                <p class="price">$30</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="hole.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Stickers</h2>
+                <p class="price">$5</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+    <div id="adm" class="centrar">
+        <br>
+        <h2 class="opinion">ACERCA DE NOSOTROS</h2>
+        <br>
+        <p class="bhdefinicion centrar">Black Hole is a massive star in the last phase of its evolution, in which the
+            star
+            collapses, creating a volume of space-time with a gravitational field so intense that its escape velocity
+            equals or exceeds that of light.</p>
+    </div>
+    <div id="">
+        <br>
+        <h2 class="centrar opinion">Inscíbete ahora a nuestra página web!</h2>
+        <form>
+            <!--INPUT PARA CREAR CUENTAS-->
+            <div class="centrar">
+                <label> Nombre</label>
+                <br>
+                <input type="text" name="name" placeholder="Nombre y Apellido" required>
+
+                <br>
+                <label> Edad</label>
+                <br>
+                <input type="edad" name="edad" placeholder="Edad" required>
+
+                <br>
+                <label> Email</label>
+                <br>
+                <input type="email" name="email" placeholder="correoElectronico" required>
+
+                <br>
+
+                <label for="pais"> Ingrese su código de area y Número</label>
+                <br>
+                <select name="nacionalidad" id="pais" required>
+                    <option value="+54">Argentina +54</option>
+                    <option value="+32">Bolivia +32</option>
+                    <option value="+12">Inglaterra +12</option>
+                    <option value="+66">Noruega +66</option>
+                    <option value="+33">Salvador +33</option>
+                    <option value="+11">Mexico +11</option>
+                    <option value="+21">Polonia +21</option>
+                    <option value="+44">Ecuador +44</option>
+                </select>
+
+
+                <input type="Numero" name="edad" placeholder="1111111111" required>
+                <br>
+            </div>
+
+            <!--FOOTER-->
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="footer">
+                        <h4 class="card-title centrar">Nuestra Ubicación!</h4>
+                        <br>
+                        <iframe class="ubicacion"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.6458732194!2d-58.55991349482265!3d-34.63838831174251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7adb36fe48b%3A0x198f2391319cfd0e!2sEstadio%20F%C3%BAtbol%20C.%20A.%20Estudiantil%20Porte%C3%B1o!5e0!3m2!1ses-419!2sar!4v1684196818514!5m2!1ses-419!2sar"
+                            width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
